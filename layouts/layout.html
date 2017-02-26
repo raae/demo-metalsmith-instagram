@@ -10,19 +10,26 @@
   </head>
   
   <body>
-    <main>
-      <header>
-        <h1>{{ site.title }}</h1>
-        {{{ contents }}}
-      </header>
-      <section>
-        {{#each collections.images}}
-          <article>
-            <img src="{{ src.standard_resolution.url }}" alt="" />
-          </article>
-        {{/each}}
-      </section>
-    </main>
+    <header>
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
+      <p><a href="#more">More info</a></p>
+    </header>
+    <section>
+      {{#each collections.images}}
+        <div>
+          <img src="{{ src.standard_resolution.url }}" alt="" />
+          <p>
+            {{{ caption }}}. <br />
+            <a href="{{ link }}"><span>View on Instagram</span></a>
+          </p>
+        </div>
+      {{/each}}
+    </section>
+    <a name="more"></a> 
+    <article>
+      {{{ contents }}}
+    </article>
   </body>
   
 </html>

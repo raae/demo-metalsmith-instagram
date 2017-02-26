@@ -12,7 +12,7 @@ Metalsmith(__dirname)
   .metadata({
     site: {
       title: 'Metalsmith ❤️ Instagram',
-      description: "Content from Instagram. Static site by Metalsmith. Demo by Benedicte (@raae)",
+      description: "Content from Instagram. Static site by Metalsmith. Demo and soon tutorial by Benedicte (@raae).",
       social: {
         twitter: 'https://twitter.com/raae',
         github: 'https://github.com/raae'
@@ -32,6 +32,7 @@ Metalsmith(__dirname)
             date: new Date(parseInt(item.created_time) * 1000).toISOString(),
             caption: item.caption.text,
             src: item.images,
+            link: item.link,
             contents: ''
           }
         })
