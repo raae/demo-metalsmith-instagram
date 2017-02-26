@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Signika:300,400,600,700');
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-size: 20px;
+  font-family: 'Signika', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+
+  background: #f5f6f5;
+  border: 4px solid orangered;
+}
+
+cite::before {
+  content: '- ';
+}
+
+h1 {
+  margin-bottom: calc(1rem + 0.75vw);
+}
+
+p {
+  margin: 0.5em 0
+}
+
+a:hover {
+  background-color: #f6d9da;
+  transition: background .3s;
+  text-decoration: none;
+}
+
+body {
+  border: 4px solid darkorange;
+  padding: 6vw 1rem;
+}
+
+header, article {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid darkorange;
+  margin: 6vw calc(-1rem - 2px);
+}
+
+section div {
+  flex: 1 1 auto;
+  position: relative;
+  background: darkorange;
+  border: 2px solid darkorange;
+}
+
+section div img {
+  width: 100%;
+  display: block;
+  transition: all 0.3s ease-in;
+}
+
+section div:hover img {
+  filter: blur(3px);
+}
+
+section div p {
+  position: absolute;
+  margin: 1rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
+  background: #f5f6f5;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  overflow: scroll;
+}
+
+section div:hover p {
+  display: block;
+  opacity: 0.85;
+}
+
+section div p a {
+  font-size: 0.7em;
+  line-height: 2;
+  float: right;
+  text-decoration: none;
+}
+
+section div p a span {
+  text-decoration: underline;
+}
+
+section div p a:hover span {
+  text-decoration: underline;
+}
+
+section div p a::after {
+  content: "\0020\2192";
+}
