@@ -64,11 +64,7 @@ section div {
 section div img {
   width: 100%;
   display: block;
-  transition: all 0.3s ease-in;
-}
-
-section div:hover img {
-  filter: blur(3px);
+  transition: all 0.3s ease-in-out;
 }
 
 section div p {
