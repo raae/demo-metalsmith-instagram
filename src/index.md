@@ -1,5 +1,4 @@
 ---
-title: Demo by Benedicte
 layout: layout.html
 ---
 
