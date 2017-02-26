@@ -34,7 +34,9 @@
 					<div id="main">
 						{{#each collections.images}}
 							<article class="thumb">
-								<a href="{{ src.standard_resolution.url }}" class="image"><img src="{{ src.standard_resolution.url }}" alt="" /></a>
+								<a href="{{ src.standard_resolution.url }}" class="image">
+									<img src="{{ src.standard_resolution.url }}" alt="" style="display: none" />
+								</a>
 								<p>{{{ caption }}}</p>
 							</article>
 						{{/each}}
