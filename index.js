@@ -46,13 +46,17 @@ Metalsmith(__dirname)
     }
   }))
   .use(markdown())
-  .use(permalinks())
+  //.use(permalinks())
   .use(layouts({
     engine: 'handlebars'
   }))
   .use(assets({
     source: './assets', // relative to the working directory
     destination: './assets' // relative to the build directory
+  }))
+  .use(assets({
+    source: './redirects', // relative to the working directory
+    destination: './' // relative to the build directory
   }))
   .build(function(err, files) {
     if (err) { throw err; }
