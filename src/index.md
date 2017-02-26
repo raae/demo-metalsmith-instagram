@@ -2,7 +2,7 @@
 layout: layout.html
 ---
 
-This is a statically generated site with the latest images from my personal Instagram account.
+This is a statically generated site with the latest images from my [personal Instagram account](http://instagram.com/benedicteraae).
 
 There is no front-end code getting these photos. The image source urls and captions 
 are fetched from Instagram when the site is built. The content is kept updated by building and 

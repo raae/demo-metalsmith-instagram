@@ -12,7 +12,7 @@ Metalsmith(__dirname)
   .metadata({
     site: {
       title: 'Metalsmith ❤️ Instagram',
-      description: "Content from Instagram. Static site by Metalsmith. Demo and soon tutorial by Benedicte (@raae).",
+      description: "Content from Instagram. Static site by Metalsmith. Demo and soon tutorial by Benedicte.",
       social: {
         twitter: 'https://twitter.com/raae',
         github: 'https://github.com/raae'
